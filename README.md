@@ -105,9 +105,9 @@ local PredictionValue = 0.1111 --// Change Prediction,  AutoPrediction Must Be O
                 if Settings.rewrittenmain.NOTIF == true then
                     Plr = getClosestPlayerToCursor()
                 game.StarterGui:SetCore("SendNotification", {
-                    Title = "nara.cc";
+                    Title = "frostbyte";
                     Text = "Unlocked",
-                    Duration = 5
+                    Duration = 3
                 })
             end
             else
@@ -116,9 +116,13 @@ local PredictionValue = 0.1111 --// Change Prediction,  AutoPrediction Must Be O
                 if Settings.rewrittenmain.NOTIF == true then
  
                     game.StarterGui:SetCore("SendNotification", {
-                        Title = "nara.cc";
-                        Text = "locked: "..tostring(Plr.Character.Humanoid.DisplayName),
-                        Duration = 5
+                        local function SendNotification(text)
+    Notification:Notify(
+        {Title = "FrostByte", Description = "@qbds - "..text},
+        {OutlineColor = Color3.fromRGB(50,76,110),Time = 2, Type = "image"},
+        {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(0,73,168)}
+    )
+ 
                     })
  
                 end
