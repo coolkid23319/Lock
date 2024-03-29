@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ZephyLua</title>
-</head>
-<body>
-    
-    <!-- Using pre tags -->
-    <pre>
-        local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obeseinsect/roblox/main/Ui%20Libraries/Elerium.lua'))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/obeseinsect/roblox/main/Ui%20Libraries/Elerium.lua'))()
 
 -- Lock
 local V3 = Vector3.new
@@ -1424,7 +1415,3 @@ end
 	Tab:Show()
 	library:FormatWindows()
 end
-    </pre>
-
-</body>
-</html>
